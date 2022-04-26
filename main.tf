@@ -70,7 +70,7 @@ resource "azurerm_kubernetes_cluster" "kubernetescluster" {
     network_plugin = "azure"
     network_policy = "azure"
   }
-  //role_based_access_control_enable = true
+  role_based_access_control_enable = true
 
   azure_active_directory_role_based_access_control {
     client_app_id     = var.client_id
